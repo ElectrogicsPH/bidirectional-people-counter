@@ -10,5 +10,11 @@ Hardware
 * Push Button - trigger config mode for wifi settings
 
 ### Wiring Diagram
-
 ![Wiring Diagram](./wiring_diagram/bidirectional_people_counter_diagram_bb.png)
+
+ESP32 Pin out reference
+![ESP32 Pin out](./images/esp32_pinout.png)
+
+### Testing
+Prototype 1
+![Prototype 1](./images/prototype1.png)
