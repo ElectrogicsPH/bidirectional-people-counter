@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "author": "Electrogics Egics",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -120, "left": -119.33, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -52.46,
+      "left": 89.79,
+      "rotate": 90,
+      "attrs": { "color": "green", "key": "2", "bounce": "0" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": -52.97,
+      "left": 18.62,
+      "rotate": 90,
+      "attrs": { "color": "green", "key": "1", "bounce": "0" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 59.66,
+      "left": 11.26,
+      "rotate": 180,
+      "attrs": { "color": "limegreen" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 60.93,
+      "left": 35.28,
+      "rotate": 180,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:GND.1", "btn2:2.r", "black", [ "h0" ] ],
+    [ "btn1:2.r", "esp:GND.1", "black", [ "v0" ] ],
+    [ "esp:D4", "btn2:1.l", "green", [ "h39.82", "v-67.4", "h37.44" ] ],
+    [ "btn1:1.l", "esp:D5", "green", [ "v-10.43", "h-120.3", "v41.8" ] ],
+    [ "led1:C", "esp:GND.1", "green", [ "v0" ] ],
+    [ "led1:A", "esp:RX2", "green", [ "v0" ] ],
+    [ "led2:C", "esp:GND.1", "green", [ "v0" ] ],
+    [ "led2:A", "esp:TX2", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
