@@ -15,6 +15,14 @@ Hardware
 ESP32 Pin out reference
 ![ESP32 Pin out](./images/esp32_pinout.png)
 
+### Schematic Diagram
+![Schematic Diagram](./images/Schematic_diagram.png)
+### PCB
+Top side
+![PCB Top Side](./images/PCB_top.png)
+
+Bottom side
+![PCB Bottom Side](./images/PCB_bottom.png)
 ### Testing
 Prototype 1
 ![Prototype 1](./images/prototype1.png)
